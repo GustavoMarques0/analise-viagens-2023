@@ -4,6 +4,21 @@ Uma análise exploratória, feita em Python, sobre a quantidade, a duração e a
 
 ![Gráficos agregados de viagens por cargo e faixa de duração](assets/viagens_2023.png)
 
+## Tecnologias
+
+- **Python** para a análise;
+- **pandas** para leitura, tratamento e agregação dos dados;
+- **Matplotlib** para os gráficos;
+- **Jupyter Notebook** para documentar o processo de forma reproduzível.
+
+## Etapas da análise
+
+- Leitura seletiva do CSV, carregando apenas as seis colunas necessárias;
+- tratamento de datas, valores ausentes e categorias de cargo;
+- cálculo da duração e das despesas consideradas;
+- agregação por cargo e faixa de duração, com critérios explícitos para grupos pequenos;
+- criação de gráficos e registro das limitações dos dados.
+
 ## O que a análise investiga
 
 - Como o número de viagens se distribui entre os cargos?
