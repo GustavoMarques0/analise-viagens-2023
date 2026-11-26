@@ -1,0 +1,22 @@
+# Dados locais: nao publicar os CSVs de viagens
+*.csv
+data/
+
+# Arquivos de desenvolvimento
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+secrets.*
+credentials.*
+*.pem
+*.key
+Thumbs.db
+.DS_Store
+
+# Notebook original de trabalho (a versao limpa fica em analise_viagens_2023.ipynb)
+Codigo.ipynb
