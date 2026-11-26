@@ -27,7 +27,15 @@ Uma análise exploratória, feita em Python, sobre a quantidade, a duração e a
 
 O notebook explica as etapas, os cálculos e os limites da análise. As despesas consideradas são a soma de diárias, passagens e outros gastos, desde que os três valores estejam disponíveis; devoluções não entram nesse cálculo. A mediana ajuda a reduzir a influência de valores muito altos.
 
-**Limitação dos dados:** 325.565 das 833.057 viagens (39,1%) não têm cargo informado. Por isso, o gráfico de cargos usa somente registros com cargo identificado e divulgado; essa proporção aparece também na tabela de qualidade do notebook.
+## Principais achados
+
+- **Cobertura do cargo:** em 833.057 viagens, 325.565 (39,1%) não informam o cargo e 118.525 (14,2%) estão marcadas como protegidas por sigilo. A comparação por cargo considera as 388.967 viagens restantes (46,7%), com cargo divulgado.
+- **Cargo mais frequente:** Professor do Magistério Superior aparece em 55.013 viagens, 14,1% das viagens com cargo divulgado.
+- **Duração e despesa:** a mediana registrada vai de R$ 129,63 nas viagens de 0 dias (139.875 viagens) a R$ 86.478,88 nas viagens acima de 180 dias (2.169 viagens). O notebook agrupa durações em faixas e inclui apenas faixas com pelo menos 30 viagens.
+
+Esses números descrevem os registros de 2023. A diferença entre as medianas não indica que a duração, por si só, cause despesas maiores; viagens longas podem ter características diferentes. A mediana das despesas considera diárias, passagens e outros gastos quando os três valores estão disponíveis, sem descontar devoluções.
+
+As contagens representam registros de viagens, não o número de servidores únicos.
 
 ## Como reproduzir
 
