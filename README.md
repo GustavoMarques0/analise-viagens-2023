@@ -2,12 +2,15 @@
 
 Uma análise exploratória, feita em Python, sobre a quantidade, a duração e as despesas registradas para viagens a serviço. O projeto usa dados do Portal da Transparência e apresenta resultados agrupados por cargo e por faixa de duração.
 
+Projeto iniciado como exercício prático em um curso da Python Asimov e ampliado para este portfólio.
+
 ![Gráficos agregados de viagens por cargo e faixa de duração](assets/viagens_2023.png)
 
 ## Tecnologias
 
-- **Python** para a análise;
+- **Python 3.10 ou superior** para a análise;
 - **pandas** para leitura, tratamento e agregação dos dados;
+- **NumPy** para as faixas numéricas de duração;
 - **Matplotlib** para os gráficos;
 - **Jupyter Notebook** para documentar o processo de forma reproduzível.
 
@@ -42,7 +45,8 @@ As contagens representam registros de viagens, não o número de servidores úni
 1. Baixe o arquivo `2023_Viagem.csv` referente a 2023 na página de [dados de viagens do Portal da Transparência](https://portaldatransparencia.gov.br/download-de-dados/viagens).
 2. Coloque o arquivo neste caminho: `data/raw/2023_Viagem.csv`.
 3. Instale as bibliotecas: `pip install -r requirements.txt`.
-4. Abra `analise_viagens_2023.ipynb` no Jupyter e execute as células na ordem.
+4. Execute `python analise_viagens.py` para gerar o resumo de qualidade e atualizar o gráfico em `assets/viagens_2023.png`.
+5. Abra `analise_viagens_2023.ipynb` no Jupyter para acompanhar a análise passo a passo; ele reutiliza as funções do script.
 
 O CSV não faz parte do repositório. Ele é grande, pode conter informações de pessoas e itinerários, e deve ser baixado diretamente da fonte indicada. O notebook lê somente seis colunas necessárias (cargo, datas e valores), sem carregar nomes, CPFs, identificadores ou detalhes de itinerário.
 
